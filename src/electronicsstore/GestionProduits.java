@@ -45,7 +45,7 @@ public class GestionProduits extends javax.swing.JFrame {
     public void connectDataBase(){
         try {
 	  Class.forName("com.mysql.jdbc.Driver");
-	  con = DriverManager.getConnection("jdbc:mysql://localhost/electronicsstore", "root", "Insatgl.2");
+	  con = DriverManager.getConnection("jdbc:mysql://localhost/electronicsstore", "", "");
         } catch (ClassNotFoundException | SQLException ex) {
 	  Logger.getLogger(GestionProduits.class.getName()).log(Level.SEVERE, null, ex);
         }
