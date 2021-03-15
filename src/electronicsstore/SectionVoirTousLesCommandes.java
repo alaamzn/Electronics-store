@@ -49,7 +49,7 @@ public class SectionVoirTousLesCommandes extends javax.swing.JFrame {
         
         try {
 	  Class.forName("com.mysql.jdbc.Driver");
-	  con = DriverManager.getConnection("jdbc:mysql://localhost/electronicsstore", "root", "Insatgl.2");
+	  con = DriverManager.getConnection("jdbc:mysql://localhost/electronicsstore", "", "");
         } catch (ClassNotFoundException | SQLException ex) {
 	  Logger.getLogger(GestionCommandes.class.getName()).log(Level.SEVERE, null, ex);
         }
